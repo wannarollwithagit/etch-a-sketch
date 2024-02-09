@@ -6,6 +6,10 @@ function createGrid(rows, cols) {
             div.setAttribute('id', i+','+j);
             div.style.width = '6.25%';
             div.style.height = '6.25%';
+
+            // hover effect on grid element
+            div.addEventListener('mouseenter', () => div.style.backgroundColor = 'black');
+            div.addEventListener('mouseleave', () => div.style.backgroundColor = 'white');
             grid.push(div);
         }
     }
