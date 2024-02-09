@@ -9,8 +9,8 @@ body > div {
 #container-game {
     display: flex;
     flex-wrap: wrap;
-    height: 500px;
-    width: 500px;
+    height: 700px;
+    width: 700px;
     margin: auto;
     border: 5px solid black;
 }

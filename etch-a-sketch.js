@@ -4,8 +4,8 @@ function createGrid(rows, cols) {
         for (let j = 0; j < cols; ++j) {
             const div = document.createElement('div');
             div.setAttribute('id', i+','+j);
-            div.style.width = '6.25%';
-            div.style.height = '6.25%';
+            div.style.width = '1%';
+            div.style.height = '1%';
 
             // hover effect on grid element
             div.addEventListener('mouseenter', () => div.style.backgroundColor = 'black');
@@ -17,6 +17,6 @@ function createGrid(rows, cols) {
 }
 
 const container = document.querySelector('#container-game');
-let grid = createGrid(16, 16);
+let grid = createGrid(100, 100);
 grid.forEach((div) => container.appendChild(div));
 
