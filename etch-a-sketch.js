@@ -9,7 +9,7 @@ function createGrid(rows, cols) {
 
             // hover effect on grid element
             div.addEventListener('mouseenter', () => div.style.backgroundColor = 'black');
-            div.addEventListener('mouseleave', () => div.style.backgroundColor = 'white');
+            //div.addEventListener('mouseleave', () => div.style.backgroundColor = 'white');
             grid.push(div);
         }
     }
