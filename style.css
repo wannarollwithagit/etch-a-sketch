@@ -1,8 +1,24 @@
-#container {
+body {
+    display: flex;
+}
+
+body > div {
+    height: 500px;
+}
+
+#container-game {
     display: flex;
     flex-wrap: wrap;
-    height: 800px;
-    width: 800px;
+    height: 500px;
+    width: 500px;
     margin: auto;
     border: 5px solid black;
+}
+
+#container-rules {
+    flex-grow: 1;
+}
+
+#container-settings {
+    flex-grow: 1;
 }

@@ -16,7 +16,7 @@ function createGrid(rows, cols) {
     return grid;
 }
 
-const container = document.querySelector('#container');
+const container = document.querySelector('#container-game');
 let grid = createGrid(16, 16);
 grid.forEach((div) => container.appendChild(div));
 
