@@ -16,7 +16,15 @@ function createGrid(rows, cols) {
     return grid;
 }
 
-const container = document.querySelector('#container-game');
-let grid = createGrid(100, 100);
-grid.forEach((div) => container.appendChild(div));
+const sketch = document.querySelector('#sketch');
+const settings = document.querySelector('#settings');
+const rules = document.querySelector('#rules');
 
+let grid = createGrid(100, 100);
+grid.forEach((div) => sketch.appendChild(div));
+
+let sketchWidth = 700;
+sketch.style.width = sketchWidth + 'px';
+subcontainerWidth = (document.body.clientWidth - sketchWidth) / 2;
+settings.style.width = subcontainerWidth + 'px';
+rules.style.width = subcontainerWidth + 'px';

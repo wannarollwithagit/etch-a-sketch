@@ -1,24 +1,26 @@
 body {
     display: flex;
+    justify-content: space-evenly;
 }
 
 body > div {
     height: 500px;
 }
 
-#container-game {
+#sketch {
     display: flex;
     flex-wrap: wrap;
     height: 700px;
-    width: 700px;
     margin: auto;
     border: 5px solid black;
 }
 
-#container-rules {
+#rules {
     flex-grow: 1;
 }
 
-#container-settings {
+#settings {
+    display: flex;
+    justify-content: center;
     flex-grow: 1;
 }
