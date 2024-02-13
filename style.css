@@ -1,6 +1,8 @@
 body {
     display: flex;
     justify-content: space-evenly;
+
+    background-color: #235347;
 }
 
 body > div {

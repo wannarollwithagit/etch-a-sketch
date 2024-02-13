@@ -6,6 +6,7 @@ function createGrid(rows, cols) {
             div.setAttribute('id', i+','+j);
             div.style.width = '1%';
             div.style.height = '1%';
+            div.style.backgroundColor = 'white';
 
             // hover effect on grid element
             div.addEventListener('mouseenter', () => div.style.backgroundColor = 'black');
