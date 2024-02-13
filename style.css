@@ -27,5 +27,17 @@ body > div {
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
     flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+.slidevalues {
+    display: flex;
+    justify-content: center;
+}
+
+#green {
+    margin-left: 160px;
+    margin-right: 160px;
 }
