@@ -9,7 +9,7 @@ function createGrid(rows, cols) {
             div.style.backgroundColor = 'white';
 
             // hover effect on grid element
-            div.addEventListener('mouseenter', () => div.style.backgroundColor = 'black');
+            div.addEventListener('mouseenter', () => div.style.backgroundColor = 'rgb('+red.value+', '+green.value+', '+blue.value+')');
             //div.addEventListener('mouseleave', () => div.style.backgroundColor = 'white');
             grid.push(div);
         }
@@ -21,6 +21,11 @@ const sketch = document.querySelector('#sketch');
 const settings = document.querySelector('#settings');
 const rules = document.querySelector('#rules');
 
+const red = document.querySelector('#rgb-red');
+const green = document.querySelector('#rgb-green');
+const blue = document.querySelector('#rgb-blue');
+console.log(red.value)
+
 let grid = createGrid(100, 100);
 grid.forEach((div) => sketch.appendChild(div));
 
@@ -29,3 +34,5 @@ sketch.style.width = sketchWidth + 'px';
 subcontainerWidth = (document.body.clientWidth - sketchWidth) / 2;
 settings.style.width = subcontainerWidth + 'px';
 rules.style.width = subcontainerWidth + 'px';
+
+
