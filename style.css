@@ -1,6 +1,7 @@
 body {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 
     background-color: #235347;
 }
@@ -25,5 +26,6 @@ body > div {
 #settings {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-grow: 1;
 }
